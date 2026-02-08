@@ -55,9 +55,9 @@ int main() {
         for (int i = 0; i < 5; i++) {
             cout << left << setw(4) << i + 1
                  << setw(15) << nama[i]
-                 << setw(10) << tugas[i]
-                 << setw(10) << uts[i]
-                 << setw(10) << uas[i]
+                 << setw(10) << fixed << setprecision(2) << tugas[i]
+                 << setw(10) << fixed << setprecision(2) << uts[i]
+                 << setw(10) << fixed << setprecision(2) << uas[i]
                  << setw(10) << fixed << setprecision(2) << akhir[i]
                  << setw(7) << grade[i] << endl;
         }
@@ -73,3 +73,4 @@ int main() {
     cout << "Terima kasih telah menggunakan program ini.\n";
     return 0;
 }
+
